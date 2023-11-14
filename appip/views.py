@@ -2,15 +2,27 @@ from django.shortcuts import render ,HttpResponse
 from django.shortcuts import render,redirect,HttpResponseRedirect,HttpResponse
 from django.urls import reverse
 from urllib.parse import urljoin
-from .models import Link
+from applink.models import Link
+from appip.models import Link
 
-def youtube(request):
-    
-    return render(request, 'youtube.html', {})
-    
-    
-
-#linkshortener
+# Create your views here.
+# def ip(request):
+#     ipe=request.META.get('REMOTE_ADDR')
+#     ipeproxy=request.META.get('HTTP_X_FORWARDED_FOR')
+#     print(ipe)
+#     print(ipeproxy)
+#     if ipe==ipeproxy:
+#         return HttpResponse('helllllo')
+#     if Link.objects.filter(ip=ipe).first is not None:
+#         return redirect('kh')
+#     else:
+#         Link(ip=ipe)
+#     return render(request,"kutahkonandeh.html",{})
+# def ik(request,pi):
+#     k=Link.objects.filter(code=pi)
+#     ipee=k.ip
+#     print(ipee)
+#     return HttpResponse(ipee)
 def safhe1(request):
     r = request.POST.get("adres")
     if r is not None:
