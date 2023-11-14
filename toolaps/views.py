@@ -4,8 +4,12 @@ from django.urls import reverse
 from urllib.parse import urljoin
 from .models import Link
 
+
+def home(request):
+
+    return HttpResponseRedirect(reverse("YoutubeDownloader"))
+
 def youtube(request):
-    
     return render(request, 'youtube.html', {})
     
     
