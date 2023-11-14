@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{% static  'js/lottie.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/youtube.css' %}">
+    <link rel="shortcut icon" href="{% static 'image/footerLogo.svg' %}" type="image/x-icon">
+    <script src="{% static 'js/fontawesome.js' %}"></script>
+    <script src="{% static 'js/jquery-3.6.3.js' %}"></script>
+    <script src="{% static 'js/youtube.js' %}"></script>
+    <title>دانلود از یوتوب</title>
+</head>
+<body>
+<div class="logoBack">
+    <a href="">
+        <i class="fa-solid fa-backward"></i>
+        <h4>
+            بازگشت
+        </h4>
+    </a>
+    <div class="logo">
+        <img src="{% static 'image/logo.svg' %}" alt="">
+    </div>
+</div>
+<div class="container">
+    <div class="Title">
+        <div class="youtubeLogo">
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <h4>
+            دانلود از یوتوب
+        </h4>
+    </div>
+    <div class="urlForm" method="post">
+        <h4>
+            لینک ویدیو
+        </h4>
+        <input type="text" name="" id="urlin" placeholder="لطفا لینک دانلود خود را وارد کنید">
+        <select name="" id="audiovideo">
+            <option value="video">
+                <h4>
+                    ویدیو
+                </h4>
+            </option>
+            <option value="audio">
+                <h4>
+                    موزیک
+                </h4>
+            </option>
+        </select>
+        <select name="" id="resoulation">
+            <option value="480p">
+                <h4>
+                    480p
+                </h4>
+            </option>
+            <option value="720p">
+                <h4>
+                    720p
+                </h4>
+            </option>
+        </select>
+        <button type="submit" id="submitbtn">
+            دانلود
+        </button>
+    </div>
+    <div class="Download" id="download"></div>
+</div>
+</body>
+</html>

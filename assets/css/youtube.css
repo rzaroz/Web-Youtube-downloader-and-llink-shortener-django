@@ -1,0 +1,254 @@
+@font-face {
+    font-family: "Yekan";
+    src: url('../fonts/YekanBakh-Regular.otf'),
+        url('../fonts/YekanBakh-Regular.ttf') format('truetype'),
+        url('../fonts/YekanBakh-Regular.woff') format('woff'),
+        url('../fonts/YekanBakh-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: "Digi";
+    src: url('../fonts/Digi\ Rastin\ Bold.otf'),
+        url('../fonts/Digi\ Rastin\ Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Popi";
+    src: url('../fonts/Poppins-Bold.ttf');
+}
+:root {
+    --time: 0.6s;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Digi";
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #22333d;
+}
+/* logoBack */
+.logoBack {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    right: 30px;
+}
+.logoBack a {
+    color: white;
+    transition: all 0.2s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.logo {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logoBack a:hover {
+    color: rgb(111, 111, 111);
+}
+.logoBack img {
+    width: 40px;
+    height: 40px;
+}
+/* Container */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.Title {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: rgb(211, 63, 63);
+    font-size: 40px;
+}
+.youtubeLogo {
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .urlForm{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+}
+.container .urlForm input {
+    width: 60%;
+    height: auto;
+    border: transparent;
+    border-radius: 10px;
+    outline: transparent;
+    padding: 4px;
+    font-size: 15px;
+    text-align: center;
+}
+.container .urlForm input::placeholder {
+    text-align: center;
+    font-size: 14px;
+}
+.container .urlForm button {
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: green;
+    outline: transparent;
+    border: transparent;
+    cursor: pointer;
+    color: white;
+}
+.container .urlForm select {
+    width: 30%;
+    text-align: center;
+    border-radius: 20px;
+    outline: transparent;
+    font-size: 15px;
+    transition: all 0.4s linear;
+}
+.container .urlForm option {
+    border-radius: 20px !important;
+}
+/* Download */
+.Download {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.fileSize {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 10px;
+}
+.fileSize span {
+    color: #c0c0c0;
+    font-size: 14px;
+}
+.loader {
+    color: white;
+}
+.File {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 10px;
+}
+.error {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #b91c1c;
+}
+/* --------------------------------------UNDER 5 INCH PHONES--------------------------------------------- */
+@media (min-width: 300px) and (max-width: 389px) {
+    .Title {
+        font-size: 20px;
+    }
+    .youtubeLogo {
+        font-size: 100px;
+    }
+    .container .urlForm input {
+        width: 99%;
+    }
+}
+/* --------------------------------------5 INCH AND BIGGER PHONES--------------------------------------------- */
+@media (min-width: 390px) and (max-width: 600px) {
+    .Title {
+        font-size: 20px;
+    }
+    .youtubeLogo {
+        font-size: 100px;
+    }
+    .container .urlForm input {
+        width: 99%;
+    }
+}
+/* --------------------------------------Mini tablets--------------------------------------------- */
+@media (min-width: 601px) and (max-width: 800px) {
+    .Title {
+        font-size: 20px;
+    }
+    .youtubeLogo {
+        font-size: 100px;
+    }
+    .container .urlForm input {
+        width: 99%;
+    }
+}
+/* --------------------------------------Tablets--------------------------------------------- */
+@media (min-width: 801px) and (max-width: 1000px) {
+    .Title {
+        font-size: 20px;
+    }
+    .youtubeLogo {
+        font-size: 100px;
+    }
+    .container .urlForm input {
+        width: 99%;
+    }
+}
+/* ----------------------------------------------------UNDER 15 INCH LAPTOPS & Devices------------------------------------------------------- */
+@media (min-width: 1001px) and (max-width: 1300px) {
+    .Title {
+        font-size: 20px;
+    }
+    .youtubeLogo {
+        font-size: 100px;
+    }
+    .container .urlForm input {
+        width: 99%;
+    }
+}
+/* ----------------------------------------------------Big Devices------------------------------------------------------- */
+@media screen and (min-width: 1600px){
+
+}
