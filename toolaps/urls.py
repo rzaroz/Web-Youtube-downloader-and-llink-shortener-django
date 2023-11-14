@@ -11,6 +11,6 @@ urlpatterns = [
     path('linkshortner/<str:r>',safhe2, name="r_link"),
     path("linkshortner/1/<str:st>",safhe3,name="sait")
 ]
-if settings.DEBUG:
-    urlpatterns=urlpatterns+static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
-    urlpatterns=urlpatterns+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+
+urlpatterns=urlpatterns+static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
+urlpatterns=urlpatterns+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
